@@ -1,0 +1,13 @@
+
+@media screen and (min-width: 500px) {
+    /* Header changes */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
