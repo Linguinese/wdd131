@@ -34,10 +34,19 @@ nav ul li a {
     color: #000;
 }
 
-main {
+nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+.box {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Single column for mobile */
     gap: 1rem;
+}
+main h2 {
+    text-align: center; /* Center text */
+    margin: 1rem 0; /* Optional: Add some vertical spacing */
 }
 
 figure {
