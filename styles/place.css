@@ -1,7 +1,10 @@
-:root{
-    background-color: red;
+:root {
+    --background-color: red; 
+    --font-color: black;
+    background-color: var(--background-color); 
     font-family: "Roboto", sans-serif;
 }
+
 
 body{
     margin: 0;
@@ -28,6 +31,14 @@ header{
     height: 100vh;
     object-fit: cover;
     margin: 0;
+}
+
+h1::after {
+    content: " "; /* Adds empty content */
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
 }
 
 .data, .weather {
