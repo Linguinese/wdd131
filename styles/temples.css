@@ -1,61 +1,58 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header, main, footer {
-    max-width: 600px;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #f0f8ff;
-}
-
-header h1, footer p {
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-nav ul li a:hover {
-    color: #007BFF; 
-    text-decoration: underline; 
-}
-
-.box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Single column for mobile */
-    gap: 1rem;
-}
-main h2 {
-    text-align: center; /* Center text */
-    margin: 1rem 0; /* Optional: Add some vertical spacing */
-}
-
-figure {
-    background-color: #fff;
-    padding: 0.5rem;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-footer {
-    text-align: center;
+@media screen and (min-width: 600px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .header {
+        background-color: #c8102e;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 24px;
+    }
+    .hero {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .hero img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .data {
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .data h2 {
+        text-align: center;
+        color: #c8102e;
+        margin-bottom: 20px;
+    }
+    .weather {
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .weather h2 {
+        text-align: center;
+        color: #c8102e;
+        margin-bottom: 20px;
+    }
+    .footer {
+        background-color: #c8102e;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .footer .flower {
+        color: #ff69b4;
+    }
 }

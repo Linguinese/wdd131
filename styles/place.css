@@ -1,0 +1,136 @@
+:root{
+    background-color: red;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    text-align: left;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+}
+
+.data, .weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.data {
+    top: 20%;
+    left: 10%;
+    width: 300px;
+}
+
+.data h2 {
+    background-color: #006838;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.weather {
+    bottom: 20%;
+    right: 10%;
+    width: 250px;
+}
+
+.weather h2 {
+    background-color: #006838;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+}
+
+footer {
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .data {
+        top: 15%;
+        left: 5%;
+        width: 280px;
+    }
+    
+    .weather {
+        bottom: 15%;
+        right: 5%;
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        width: 100%; 
+        text-align: center;
+        object-fit: cover;
+    }
+    
+    .data, .weather {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 10px;
+        position: relative; 
+    }
+    
+    .data {
+        top: auto;
+    }
+    
+    .weather {
+        bottom: auto;
+    }
+    
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .data h2, .weather h2 {
+        font-size: 18px;
+    }
+    
+    .data, .weather {
+        padding: 15px;
+    }
+    
+    footer {
+        font-size: 10px;
+    }
+}
