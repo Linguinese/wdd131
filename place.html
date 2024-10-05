@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>São Paulo</title>
+    <meta name="Description" content="This Website contain data and Weather data about São Paulo City">
+    <meta name="Author" content="Nicolas Eiji Morise Silva">
+    <title>São Paulo City - Nicolas Eiji Morise Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js"></script>
+</head>
 <header>
     <h1>São Paulo</h1>
 </header>
 <body>
     <main>
         <div class="hero">
-        <img src="images/hero-image.webp" alt="">
+            <picture>
+                <source srcset="images/hero-image.webp" media="(min-width: 1024px)">
+                <img loading="hero" src="images/sao-paulo.webp" alt="Sao Paulo Image">
+            </picture>
         </div>
         <div class="data">
             <h2>Data</h2>
