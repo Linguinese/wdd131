@@ -1,31 +1,28 @@
-function calculateWindChill(temperature, windSpeed) {
-    return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const temperature = 15; 
+    const windSpeed = 14;  
 
-function displayWindChill() {
-    const temperature = 30; 
-    const windSpeed = 5; 
-    const windchillElement = document.getElementById('windchill');
-
-    if (temperature <= 10 && windSpeed > 4.8) {
-        const windChillFactor = calculateWindChill(temperature, windSpeed);
-        windchillElement.textContent = `Wind Chill: ${windChillFactor.toFixed(2)}°F`;
-    } else {
-        windchillElement.textContent = 'Wind Chill: N/A';
+    function calculateWindChill(temp, windSpeed) {
+        return (
+            13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)
+        ).toFixed(2);
     }
-}
 
+    function displayWindChill(temp, windSpeed) {
+        if (temp <= 10 && windSpeed > 4.8) {
+            const windChill = calculateWindChill(temp, windSpeed);
+            document.querySelector(".weather ul").innerHTML += `<li>Wind Chill: ${windChill} °C</li>`;
+        } else {
+            document.querySelector(".weather ul").innerHTML += `<li>Wind Chill: N/A</li>`;
+        }
+    }
 
-function updateFooter() {
-    const currentYearElement = document.getElementById('current-year');
-    const lastModifiedElement = document.getElementById('last-modified');
+ 
+    displayWindChill(temperature, windSpeed);
 
-    currentYearElement.textContent = new Date().getFullYear();
-    lastModifiedElement.textContent = document.lastModified;
-}
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = `Current Year: ${currentYear}`;
 
-
-window.onload = function() {
-    displayWindChill();
-    updateFooter();
-};
+    const lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+});
