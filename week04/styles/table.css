@@ -11,6 +11,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    padding: 5%;
 }
 table{
     margin: 10px auto;
@@ -31,13 +32,19 @@ tr:first-child th, .highlight {
 }
 
 th, td {
-	padding: 7px 15px;
-	border: 1px solid var(--borderlight);
+	padding: 0.5em 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: pre;
 }
 
 th {
 	background-color: var(--back2);
 	font-size: larger;
+}
+
+thead th,
+tbody td {
+  text-align: center;
 }
 
 td {
