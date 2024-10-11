@@ -1,0 +1,15 @@
+@media screen and (min-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Change layout to horizontal */
+        justify-content: space-around;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Change to three columns for larger screens */
+        gap: 2rem; /* Increased gap */
+    }
+
+    header, main, footer {
+        max-width: 1200px; /* Increased max-width */
+    }
+}
