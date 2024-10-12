@@ -31,7 +31,9 @@ nav a:hover {
     text-decoration: underline; 
 }
 
-
+main h2{
+    text-align: center;
+}
 .temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
