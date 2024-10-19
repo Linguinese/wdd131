@@ -1,0 +1,73 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 style */
+h1 {
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* New h2 style */
+h2 {
+  font-size: 20px;
+  color: #34495e;
+  text-align: left;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Form container */
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and inputs styling */
+label {
+  font-size: 16px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .form-container {
+    width: 95%;
+  }
+}

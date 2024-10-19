@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+</head>
+<body>
+  <h1>Thank you for submitting your review!</h1>
+  <p>Your review has been successfully submitted.</p>
+
+  <script>
+    // Check if the counter exists in localStorage, if not set it to 0
+    if (!localStorage.getItem('reviewCounter')) {
+      localStorage.setItem('reviewCounter', 0);
+    }
+
+    // Increment the review counter
+    let counter = parseInt(localStorage.getItem('reviewCounter')) + 1;
+    localStorage.setItem('reviewCounter', counter);
+
+    // Display the review counter
+    document.body.innerHTML += `<p>You have submitted ${counter} reviews.</p>`;
+  </script>
+</body>
+</html>
